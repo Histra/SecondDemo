@@ -22,7 +22,7 @@
    核心代码展示：
 
    ```
-   /// 创建输出图像1
+   	/// 创建输出图像1
    	poDstDs1 = GetGDALDriverManager()->GetDriverByName("GTiff")->Create(dstPath1, imgXlen, imgYlen, bandNum, GDT_Byte, NULL);
    	/// 创建输出图像2
    	poDstDs2 = GetGDALDriverManager()->GetDriverByName("GTiff")->Create(dstPath2, imgXlen, imgYlen, bandNum, GDT_Byte, NULL);
@@ -57,7 +57,7 @@
     核心代码展示：
 
     ```c++
-    cout << "Running Task one ..." << endl;
+    	cout << "Running Task one ..." << endl;
     	/// 起始位置坐标
     	int startX = 100;
     	int startY = 100;
@@ -99,7 +99,7 @@
    核心代码展示：
 
    ```c++
-   cout << "Running Task two ..." << endl;
+   	cout << "Running Task two ..." << endl;
    	/// 重置初始位置坐标
    	startX = 300;
    	startY = 300;
@@ -128,7 +128,7 @@
    核心代码展示：
 
    ```c++
-   /// 重置初始位置坐标
+   	/// 重置初始位置坐标
    	startX = 500;
    	startY = 500;
    	/// 重置区域宽度高度
