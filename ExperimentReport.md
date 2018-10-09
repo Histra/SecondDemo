@@ -37,7 +37,7 @@
     GetRasterBand(3)得到的是蓝色通道。
 
     那么获取红色通道就可以使用GetRasterBand(1)，然后使用Raster()函数读取Input.jpg中的起点（100，100），宽度为200像素，高度为150像素的区域，并将其赋值给临时变量buffTmp；遍历buffTmp，将其每一处都赋值成(GByte)255，即把红色通道中的每一个值都变成最大值（通常，三基色的每个数值也是在0到255之间，0表示相应的基色在该像素中没有，而255则代表相应的基色在该像素中取得最大值）。在这个过程中要注意对图像横纵坐标的理解和转化；最后，再次使用Raster()函数将buffTmp写入到输出图像poDstDs1的红色通道中。
-   核心代码展示：
+      核心代码展示：
 
    ![1539061718278](https://github.com/Histra/SecondDemo/blob/master/1539061718278.png)
 
@@ -48,7 +48,7 @@
 
    打开OutPut1.tif文件(截图，非截图在data文件夹下)：
 
-   ![1539062672022](https://github.com/Histra/SecondDemo/blob/master/1539062672022.png)
+   ![Output1](https://github.com/Histra/SecondDemo/blob/master/data/Output1.tif)
 
 7. 任务2：把图像指定区域置为白色和黑色
    任务描述：把输入图像中起始点（300，300），宽度为100像素，高度为50像素的区域置为白色，同时，把输入图像中起始点为（500，500），宽度为50像素，高度为100像素的区域置为黑色。
