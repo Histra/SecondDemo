@@ -8,12 +8,12 @@
 
 1. 在源程序目录下新建data文件夹，用于存放数据图片和结果图片。把gdal文件夹和gdal_i.lib拷贝到项目目录下，把gdal18.dll拷贝到Release文件夹下。然后在代码块中添加如下代码：
 
-2. ```c++
-   #include "./gdal/gdal_priv.h"
-   #pragma comment(lib, "gdal_i.lib")
-   ```
+    ```c++
+    #include "./gdal/gdal_priv.h"
+    #pragma comment(lib, "gdal_i.lib")
+    ```
 
-   输入输出图像路径：
+2. 输入输出图像路径：
 
    ```
    	/// 输入图像路径
