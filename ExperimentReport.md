@@ -15,7 +15,14 @@
 
    输入输出图像路径：
 
-   ![1539060832748](https://github.com/Histra/SecondDemo/blob/master/1539060832748.png)
+   ```
+   	/// 输入图像路径
+   	char* srcPath = "./data/Input.jpg";
+   	/// 输出图像1(任务1)
+   	char* dstPath1 = "./data/Output1.tif";
+   	/// 输出图像2(任务2)
+   	char* dstPath2 = "./data/Output2.tif";
+   ```
 
 3. 创建Output1.tif和Output2.tif，然后声明一个临时变量Temp并为之分配内存，用该变量实现复制Input.jpg到Output1.tif和Output2.tif。这一过程和FirstDemo实验大同小异。最后一定要使用CPLFree()函数清除Temp临时变量！
 
@@ -84,6 +91,7 @@
 6. 任务一结果展示：
 
    打开data文件夹：
+
       ![1539062733325](https://github.com/Histra/SecondDemo/blob/master/1539062726091.png)
 
    打开OutPut1.tif文件(截图，非截图在data文件夹下)：
